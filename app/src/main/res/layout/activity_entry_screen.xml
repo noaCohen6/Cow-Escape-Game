@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/entry_IMG_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_background"
+        android:alpha="0.3"
+        />
+    <!-- Game Title -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/entry_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cow_escape_game"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Control Type Selection Group -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/entry_LBL_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/control_type"
+        android:textSize="@dimen/text_menu"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/entry_LBL_title"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/control_switch_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/entry_LBL_control"
+        android:layout_marginTop="@dimen/buttons_top_margin">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/entry_LBL_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrows"
+            android:textSize="@dimen/text_buttons_menu"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/entry_SW_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/entry_LBL_sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensors"
+            android:textSize="@dimen/text_buttons_menu"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/menu_buttons_margin" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Difficulty Selection Group -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/entry_LBL_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficulty_level"
+        android:textSize="@dimen/text_menu"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/control_switch_group"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/difficulty_switch_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/entry_LBL_difficulty"
+        android:layout_marginTop="@dimen/buttons_top_margin">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/entry_LBL_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textSize="@dimen/text_buttons_menu"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/entry_SW_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/menu_buttons_margin" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/entry_LBL_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textSize="@dimen/text_buttons_menu"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/menu_buttons_margin" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Start Game Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/entry_BTN_start"
+        android:layout_width="@dimen/menu_button_layout_width"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:textSize="@dimen/text_buttons_menu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Dark_green"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_below="@id/difficulty_switch_group"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Record Screen Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/entry_BTN_record"
+        android:layout_width="@dimen/menu_button_layout_width"
+        android:layout_height="wrap_content"
+        android:text="Record Screen"
+        android:textSize="@dimen/text_buttons_menu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:backgroundTint="@color/Dark_green"
+        android:layout_below="@id/entry_BTN_start"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

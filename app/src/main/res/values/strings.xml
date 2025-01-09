@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">25A_10357_HW</string>
+    <string name="send">Send</string>
+    <string name="hint">Please Enter Location</string>
+    <string name="cow_escape_game">Cow Escape Game</string>
+    <string name="control_type">Control Type:</string>
+    <string name="difficulty_level">Difficulty Level:</string>
 
 
 </resources>

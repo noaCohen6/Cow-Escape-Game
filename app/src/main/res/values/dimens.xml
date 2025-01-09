@@ -8,4 +8,14 @@
     <dimen name="player_size">100dp</dimen>
     <dimen name="button_size">60dp</dimen>
     <dimen name="cowGirl_size">100dp</dimen>
+    <dimen name="result_text_size">72sp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="text_buttons_menu">16sp</dimen>
+    <dimen name="menu_button_layout_width">180dp</dimen>
+    <dimen name="score_item_text_size">14sp</dimen>
+    <dimen name="data_margin">5dp</dimen>
+    <dimen name="menu_buttons_margin">8dp</dimen>
+    <dimen name="text_menu">20sp</dimen>
+    <dimen name="buttons_top_margin">20dp</dimen>
 </resources>

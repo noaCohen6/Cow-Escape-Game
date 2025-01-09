@@ -3,4 +3,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#CDFAD6</color>
+    <color name="green">#DBEFDC</color>
+    <color name="blue">#B2DFDB</color>
+    <color name="green2">#B7E7B8</color>
+    <color name="green3">#8DC58E</color>
+
+    <color name="Dark_green">#81C784</color>
+
+
+
+
+
 </resources>
